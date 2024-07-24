@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    /* Remove focus outline */
+}
+
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #8B4513;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 999;
+}
+
+.navbar-menu.active {
+    transform: translateX(0);
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.navbar-menu ul li {
+    padding: 10px 0;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: #F5CBA7;
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 100px;
+}
+
+.corner-content {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+.text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.navbar-shadow {
+    position: absolute;
+    height: 1.5px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    /* Gradiente para la sombra inferior */
+    bottom: -5px;
+    /* Ajustar la distancia desde la parte inferior de la barra de navegación */
+    top: 90px;
+    left: 0;
+    width: 100%;
+    /* Asegurar que ocupe todo el ancho de la barra de navegación */
+}
+
+.imagen-inicio {
+    position: absolute;
+    /* Posiciona absolutamente la imagen */
+    top: 120px;
+    /* Alinea la imagen al borde superior del contenedor */
+    right: 0;
+    /* Alinea la imagen al borde derecho del contenedor */
+    max-width: 550px;
+    /* Ancho máximo de la imagen */
+}
+
+.navbar-shadow-2 {
+    position: absolute;
+    height: 1.5px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    /* Gradiente para la sombra inferior */
+    bottom: -5px;
+    /* Ajustar la distancia desde la parte inferior de la barra de navegación */
+    top: 410px;
+    left: 0;
+    width: 100%;
+    /* Asegurar que ocupe todo el ancho de la barra de navegación */
+}
+
+.button-menucatalogo {
+    text-align: center;
+    background-color: #8B4513; /* Color café */
+    padding: 45px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 300px; /* Ancho del contenedor */
+    margin: auto; /* Centra horizontalmente el contenedor */
+    margin-top: 95px; /* Espacio superior */
+    
+}
+
+.button-menucatalogo {
+    color: #F5CBA7;
+}
+
+.button-menu {
+    background-color: #F5CBA7;
+    /* Color del botón */
+    color: #8B4513;
+    /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 17px;
+    /* Bordes redondeados para hacer el botón redondo */
+    margin-top: 15px;
+    /* Espacio superior */
+}
+
+.boton-menu:hover {
+    opacity: 0.8;
+    /* Cambio de opacidad al pasar el mouse */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer-text-left, .footer-text-right {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .footer-svg {
+    margin-left: 20px;
+  }
+  
+  svg {
+    fill: #666;
+  }
